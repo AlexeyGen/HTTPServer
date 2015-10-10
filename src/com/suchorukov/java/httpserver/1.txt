@@ -1,0 +1,24 @@
+//читаем первую строку запроса, игнорируем все заголовки которые идут дальше первой строки
+/*
+StringBuilder sb = new StringBuilder();
+int c;
+while((c =in.read())!=-1 && c!=10 && c!=13){
+    sb.append((char)c);
+}
+//получаем команду и ее аргументы
+String data = sb.toString(); 
+String args[] = data.split(" ");
+String cmd = args[0].trim().toUpperCase();
+// пишем ответ  Hello world
+String s = "<html><title>test</title><body>Hello <b>world</b></body></html>";
+//пишем статус ответа
+out.write("HTTP/1.0 200 OK\r\n".getBytes());
+//минимально необходимые заголовки, тип и длина
+out.write("Content-Type: text/html\r\n".getBytes());
+out.write(("Content-Length: "+s.length()+"\r\n").getBytes());
+//пустая строка отделяет заголовки от тела
+out.write("\r\n".getBytes());
+//тело
+out.write(s.getBytes());
+out.flush();
+*/
